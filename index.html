@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>slide</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./assets/owl.carousel.css">
+
+    <div class="owl-carousel">
+      <img src="./assets/nova1.jpg" alt=""/>
+      <img src="./assets/nova2.jpg" alt="">
+      <img src="./assets/nova4.jpg" alt="">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel(
+        {
+          animateOut: 'slideOutDown',
+          animateIn: 'flipInX',
+          items:1,
+          margin:30,
+          stagePadding:30,
+          smartSpeed:450,
+          lazyLoad:true,
+          loop:true,
+          margin:10
+        }
+      );
+    });
+    </script>
+  </body>
+</html>
