@@ -10,7 +10,7 @@
     <div class="owl-carousel">
       <img src="./assets/nova1.jpg" alt=""/>
       <img src="./assets/nova2.jpg" alt="">
-      <img src="./assets/nova4.jpg" alt="">
+      <img src="./assets/nova3.jpg" alt="">
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
@@ -19,15 +19,21 @@
     $(document).ready(function(){
       $(".owl-carousel").owlCarousel(
         {
-          animateOut: 'slideOutDown',
-          animateIn: 'flipInX',
-          items:1,
-          margin:30,
-          stagePadding:30,
-          smartSpeed:450,
-          lazyLoad:true,
+          rtl:true,
           loop:true,
-          margin:10
+          margin:10,
+          nav:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:1
+              }
+          }
         }
       );
     });
