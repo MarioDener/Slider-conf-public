@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="./assets/owl.carousel.css">
 
     <div class="owl-carousel">
-      <img src="./assets/nova1.jpg" alt=""/>
-      <img src="./assets/nova2.jpg" alt="">
-      <img src="./assets/nova3.jpg" alt="">
+      <div>
+        <img src="./assets/nova2.jpg" alt="">
+        <h1>Hola</h1>
+      </div>
+      <div>
+        <img src="./assets/nova1.jpg" alt=""/>
+      </div>
+      <div>
+        <img src="./assets/nova3.jpg" alt="">
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
@@ -19,6 +26,8 @@
     $(document).ready(function(){
       $(".owl-carousel").owlCarousel(
         {
+          animateOut: 'slideOutDown',
+          animateIn: 'flipInX',
           rtl:true,
           loop:true,
           margin:10,
